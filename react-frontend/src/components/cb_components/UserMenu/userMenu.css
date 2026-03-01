@@ -1,0 +1,39 @@
+.preview-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.icon-preview {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-preview-sm {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-item {
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #6366f1;
+  padding-left: 1rem;
+}
+
+.submenu-list {
+  border-left: 2px solid #e5e7eb;
+  padding-left: 1.5rem;
+}
+
+.submenu-item {
+  transition: background-color 0.2s;
+}
+
+.submenu-item:hover {
+  background-color: #f8f9fa;
+}

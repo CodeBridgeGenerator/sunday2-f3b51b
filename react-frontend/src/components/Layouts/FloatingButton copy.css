@@ -1,0 +1,115 @@
+.floating-button {
+  /* position: fixed; */
+  /* bottom: 20px;
+    right: 20px; */
+  z-index: 1000;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  /* transition: transform 0.2s ease-in-out; */
+}
+
+.floating-button:hover {
+  transform: scale(1.1);
+}
+
+.custom-support-icon {
+  width: 20px;
+  height: 20px;
+  /* object-fit: contain; */
+}
+
+.custom-red-button {
+  background-color: #d30000 !important;
+  border-color: #d30000 !important;
+}
+
+.custom-red-button:hover {
+  background-color: #a50a0a !important;
+  border-color: #a50a0a !important;
+}
+
+.custom-red-button:focus {
+  box-shadow: 0 0 0 0.2rem rgba(211, 0, 0, 0.5) !important;
+}
+
+.custom-compose-dialog {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-compose-dialog .p-dialog-content {
+  padding: 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-compose-dialog .p-dialog-header {
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.custom-compose-dialog .p-dialog-footer {
+  border-top: 1px solid #ddd;
+}
+
+.custom-compose-dialog .p-field {
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.custom-compose-dialog .p-inputtext,
+.custom-compose-dialog .p-inputtextarea {
+  width: 100%;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.custom-compose-dialog .p-inputtext:focus,
+.custom-compose-dialog .p-inputtextarea:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #2196f3;
+}
+
+.custom-compose-dialog.dialog-minimized {
+  width: 300px !important;
+  height: auto !important;
+  bottom: 0 !important;
+  right: 20px !important;
+  position: fixed !important;
+}
+
+.custom-compose-dialog.dialog-minimized .p-dialog-content {
+  display: none;
+}
+
+.custom-compose-dialog.dialog-fullscreen {
+  width: 95vw !important;
+  height: 95vh !important;
+  top: 0 !important;
+  left: 0 !important;
+}
+
+.dialog-header-icons {
+  display: flex;
+  align-items: center;
+}
+
+.dialog-header-icons button {
+  margin-left: 0.25rem;
+}
+
+.p-dialog .p-dialog-header .p-dialog-header-icon {
+  color: #495057 !important;
+}

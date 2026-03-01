@@ -1,0 +1,64 @@
+{
+    "host": "localhost",
+    "projectName" : "sunday2",
+    "clientUrl": "http://localhost:3000",
+    "env": "sit",
+    "port": 6030,
+    "paginate": {
+        "default": 1000,
+        "max": 5000
+    },
+    "releasesFolder": "releases",
+    "resourcesFolder": "resources",
+    "passwordReset": {
+        "tokenExpiresIn": "30m",
+        "requestIntervalInMinutes": 5
+    },
+    "verifyEmail": {
+        "tokenExpiresIn": "1d",
+        "requestIntervalInMinutes": 1
+    },
+    "public": "../public/",
+    "mongodb": "mongodb://localhost:27017/sunday2-sit",
+    "authentication": {
+        "entity": "user",
+        "service": "users",
+        "secret": "bd5d2e4c390ed53bcf1499b6a06e4b81c87ce5dd1af29fdeabe77eb41bc33dd9",
+        "authStrategies": ["jwt", "local"],
+        "jwtOptions": {
+            "header": {
+                "type": "access"
+            },
+            "audience": "http://localhost:3000",
+            "issuer": "Code Bridge Sdn Bhd",
+            "algorithm": "HS256",
+            "expiresIn": "1d"
+        },
+        "local": {
+            "usernameField": "email",
+            "passwordField": "password"
+        },
+        "oauth": {
+            "redirect": "/",
+            "auth0": {
+                "key": "<auth0 oauth key>",
+                "secret": "<auth0 oauth secret>",
+                "subdomain": "<auth0 subdomain>",
+                "scope": ["profile", "openid", "email"]
+            }
+        }
+    },
+    "redis": {
+        "host": "localhost",
+        "port": 6379
+    },
+    "passwordPolicy": {
+        "minLength": 6,
+        "maxLength": 128,
+        "uppercase": true,
+        "lowercase": true,
+        "digits": true,
+        "symbols": true,
+        "prohibited": true
+    }
+}

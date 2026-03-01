@@ -1,0 +1,161 @@
+{
+  "projectName": "sunday2",
+  "description": null,
+  "auth": "jwt",
+  "database": {
+    "_id": "6718ba9bc686b63c57a218e6",
+    "type": "database",
+    "name": "mongodb",
+    "label": "MongoDB",
+    "appName": "mongodb-database",
+    "pathToLogo": {
+      "s": "/assets/applications_logos/mongodb-s.png",
+      "l": "/assets/applications_logos/mongodb.png"
+    },
+    "configFileRelativePath": null,
+    "disabled": false,
+    "createdAt": "2024-10-23T08:58:03.145Z",
+    "updatedAt": "2024-10-23T08:58:03.145Z"
+  },
+  "stack": [
+    {
+      "appName": "nodejs-backend",
+      "environments": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "pathToLogo": {
+        "s": "/assets/applications_logos/nodejs-s.png",
+        "l": "/assets/applications_logos/nodejs.png"
+      },
+      "type": "backend",
+      "name": "nodejs",
+      "label": "Node.js Express Feathers.js",
+      "versions": []
+    },
+    {
+      "appName": "react-frontend",
+      "environments": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "pathToLogo": {
+        "s": "/assets/applications_logos/react-s.png",
+        "l": "/assets/applications_logos/react.png"
+      },
+      "type": "frontend",
+      "name": "react",
+      "label": "React JavaScript",
+      "versions": []
+    }
+  ],
+  "services": [
+    {
+      "serviceName": "highways",
+      "databaseName": "highways",
+      "displayName": "Highways",
+      "icon": "pi pi-cog",
+      "timestamp": true,
+      "createdBy": true,
+      "updatedBy": true,
+      "create": true,
+      "edit": true,
+      "delete": true,
+      "single": true,
+      "sidebar": [],
+      "schemaList": [
+        {
+          "fieldName": "name",
+          "type": "String",
+          "enumStringValues": [],
+          "setStringValues": [],
+          "enumNumberValues": [],
+          "setNumberValues": [],
+          "protected": false,
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": false,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "deletable": false,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Name",
+          "faker": {
+            "module": "lorem",
+            "subModule": "sentence",
+            "args": "1",
+            "skip": false,
+            "_id": "69a3907a67e329501cf3b550"
+          },
+          "isMultiple": false,
+          "isManyToMany": false,
+          "enum": [],
+          "index": false,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        }
+      ],
+      "layout": false,
+      "seeder": [],
+      "skip": false,
+      "downloadable": true,
+      "uploadable": true,
+      "sharable": true,
+      "ai": true,
+      "mobile": true,
+      "warehouse": true,
+      "serviceHooks": {
+        "mustLoginAllBefore": true,
+        "mustLoginCreatedBefore": false,
+        "mustLoginGetBefore": false,
+        "mustLoginFindBefore": false,
+        "mustLoginUpdateBefore": false,
+        "mustLoginPatchBefore": false,
+        "mustLoginRemoveBefore": false,
+        "mustLoginAllAfter": false,
+        "mustLoginFindAfter": false,
+        "mustLoginGetAfter": false,
+        "mustLoginCreatedAfter": false,
+        "mustLoginUpdateAfter": false,
+        "mustLoginPatchAfter": false,
+        "mustLoginRemoveAfter": false,
+        "mustLoginAllError": false,
+        "mustLoginFindError": false,
+        "mustLoginGetError": false,
+        "mustLoginCreatedError": false,
+        "mustLoginUpdateError": false,
+        "mustLoginPatchError": false,
+        "mustLoginRemoveError": false,
+        "_id": "69a3907a67e329501cf3b551"
+      }
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "human": "Human: I'm going to give you documents. Then I'm going to ask you a question about it. I'd like you to first answer the question using the facts from the document contents, and then after the writing down the answers, I'd like you to inlcude all the exact references to the quotes in the documents provided in full so that it will would help answer the question. Here is the document:",
+  "documents": [],
+  "modelId": "anthropic.claude-3-opus-20240229-v1:0",
+  "task": "First, find all the quotes from the document that are relevant to answering the question, and then print them in numbered order. Quotes should be full and complete.",
+  "noCondition": "If there are no relevant quotes, write \"No relevant quotes found.\"",
+  "yesCondition": "Then, answer the question, starting with \"Answers with citation:\". Include the reference to quote content verbatim in full in the answer. Don't say \"According to Quote [1]\" when answering. Instead make the complete references to quotes relevant to each section of the answer solely by adding their bracketed numbers at the end of relevant sentences. Add the document name and section of the quote.",
+  "format": "Thus, the format of your overall response should look like what's shown between the <example></example> tags. Make sure to follow the formatting and spacing exactly.",
+  "example": [
+    "<example>",
+    "Answers with citation:",
+    "Company X earned $12 million. [1]",
+    "Almost 90% of it was from widget sales. [2]",
+    "Relevant extracts:",
+    "[1] \"Company X reported revenue of $12 million in 2021.\"",
+    "[2] \"Almost 90% of revenue came from widget sales, with gadget sales making up the remaining 10%.\"",
+    "</example>"
+  ],
+  "preamble": "Here is the first question:",
+  "question": "",
+  "synonymous": [
+    {
+      "primary": "represent",
+      "synonyms": "warrant, covenant, undertake"
+    },
+    {
+      "primary": "representation",
+      "synonyms": "warranty, covenant, undertaking, assurance, guarantee"
+    },
+    {
+      "primary": "negative",
+      "synonyms": "restrictive"
+    },
+    {
+      "primary": "obligation",
+      "synonyms": "duty, responsibility"
+    },
+    {
+      "primary": "connected",
+      "synonyms": "related, association"
+    },
+    {
+      "primary": "associated person",
+      "synonyms": "associated party, related party, related corporation, related company, associated company, associated corporation, connected party, connected person, connected corporation"
+    },
+    {
+      "primary": "borrower",
+      "synonyms": "customer"
+    },
+    {
+      "primary": "security document",
+      "synonyms": "financing document, transaction document, securities document, facility documents, facilities document"
+    },
+    {
+      "primary": "secured amount",
+      "synonyms": "secured liability"
+    },
+    {
+      "primary": "Legal Process",
+      "synonyms": "proceeding,disputes, hearing, suit, legal proceeding, arbitration, mediation, litigation, claims, administrative proceeding, appeal, petition, distress, clegal contest, dispute resolution, stay of execution, seuqestration"
+    },
+    {
+      "primary": "security interest",
+      "synonyms": "security"
+    },
+    {
+      "primary": "indebtedness",
+      "synonyms": "borrowings"
+    },
+    {
+      "primary": "consent",
+      "synonyms": "approval, authorisation, license, permission"
+    },
+    {
+      "primary": "law",
+      "synonyms": "guideline, rules, order, decree, regulation, directive, rule of law, ordinance, code, statutory provision, statute, policy, equity, regulatory requirement"
+    },
+    {
+      "primary": "waiver",
+      "synonyms": "exemption, suspension, cancellation, termination"
+    },
+    {
+      "primary": "recal",
+      "synonyms": "termination, suspension, cancellation"
+    },
+    {
+      "primary": "power",
+      "synonyms": "capacity"
+    },
+    {
+      "primary": "enforceability",
+      "synonyms": "validity, binding, legality"
+    },
+    {
+      "primary": "inaccurate",
+      "synonyms": "misleading"
+    },
+    {
+      "primary": "costs",
+      "synonyms": "charges, fees, expenses, expenditure, losses, outgoings, out-of-pocket expenses, commission, interest, commission"
+    },
+    {
+      "primary": "prepayment",
+      "synonyms": "early payment"
+    },
+    {
+      "primary": "unutilised",
+      "synonyms": "unused, undrawn, undisbursed"
+    },
+    {
+      "primary": "substitute",
+      "synonyms": "replace, interchange, convert"
+    },
+    {
+      "primary": "vary",
+      "synonyms": "amend, modify, substitute, supplement, reinstate"
+    },
+    {
+      "primary": "acknowledge",
+      "synonyms": "agree, accept, assent"
+    },
+    {
+      "primary": "insolvency",
+      "synonyms": "winding-up, bankruptcy, liquidation, dissolution"
+    },
+    {
+      "primary": "set-off",
+      "synonyms": "counterclaim"
+    },
+    {
+      "primary": "deal",
+      "synonyms": "sell, dispose, transfer, lease, charge, encumber"
+    },
+    {
+      "primary": "taxes",
+      "synonyms": "duties, levies, remittance"
+    },
+    {
+      "primary": "term",
+      "synonyms": "provision, stipulation, obligation, statement"
+    },
+    {
+      "primary": "inaffective",
+      "synonyms": "invalid, illegal, void, unenforceable"
+    },
+    {
+      "primary": "receiver",
+      "synonyms": "manager, receiver and manager, trustee, liquidator, judicial receiver, administrator"
+    },
+    {
+      "primary": "repudiate",
+      "synonyms": "terminate"
+    },
+    {
+      "primary": "merge",
+      "synonyms": "almagamate"
+    },
+    {
+      "primary": "assignment",
+      "synonyms": "transfer, novation"
+    },
+    {
+      "primary": "payable",
+      "synonyms": "due"
+    },
+    {
+      "primary": "writ",
+      "synonyms": "summon, legal process"
+    },
+    {
+      "primary": "notice",
+      "synonyms": "demand, communication"
+    },
+    {
+      "primary": "wilful default",
+      "synonyms": "wilful negligence, fraud, gross negligence"
+    },
+    {
+      "primary": "agent",
+      "synonyms": "representative, attorney"
+    },
+    {
+      "primary": "successor",
+      "synonyms": "heir, estate, personal representative, successor-in-title"
+    },
+    {
+      "primary": "filing",
+      "synonyms": "stamping, registration, perfection, presentation"
+    },
+    {
+      "primary": "charges",
+      "synonyms": "mortgages, liens"
+    },
+    {
+      "primary": "strike",
+      "synonyms": "lock-out, industrial dispute, boycott, blockade, sanction, war, hostilities,terrorist activity, insurrection, riot, civil commotion, unrest"
+    },
+    {
+      "primary": "incorporated",
+      "synonyms": "organized, established, registered "
+    },
+    {
+      "primary": "violation",
+      "synonyms": "breach, incompliance"
+    },
+    {
+      "primary": "surety",
+      "synonyms": "guarantor"
+    },
+    {
+      "primary": "error",
+      "synonyms": "mistatement, inaccuracy, omission"
+    }
+  ],
+  "assistant": "Assistant:",
+  "params": {
+    "max_tokens_to_sample": 4096,
+    "temperature": 0.5,
+    "top_k": 250,
+    "top_p": 1,
+    "stop_sequences": ["Human"]
+  }
+}

@@ -1,0 +1,14 @@
+/* Initial state: visible */
+.fade-on-hover {
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
+  opacity: 0.3;
+}
+
+/* On hover: fade out and shrink */
+.fade-on-hover:hover {
+  opacity: 1;
+  transform: scale(0.8);
+  pointer-events: none; /* optional: prevent clicks while fading */
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "_id": "66e678d947480b243fc573fc",
+    "roleId": "67435a2c6521f76d8ac46f2f",
+    "name": "Staff",
+    "isDefault": false
+  },
+  {
+    "_id": "66e678d947480b243fc573fb",
+    "roleId": "67435a2c6521f76d8ac46f30",
+    "name": "External",
+    "isDefault": true
+  },
+  {
+    "_id": "66e678d947480b243fc573fd",
+    "roleId": "67435a2c6521f76d8ac46f33",
+    "name": "Admin",
+    "isDefault": false
+  },
+  {
+    "_id": "685e28c2ae2ec9ded1c8ba8e",
+    "roleId": "67435a2c6521f76d8ac46f32",
+    "name": "Super",
+    "isDefault": false
+  }
+]

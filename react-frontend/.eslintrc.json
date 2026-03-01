@@ -1,0 +1,32 @@
+{
+  "env": {
+    "es6": true,
+    "node": true,
+    "mocha": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime"
+  ],
+  "rules": {
+    "indent": "off",
+    "quotes": "off",
+    "semi": "off",
+    "no-unused-vars": "off",
+    "no-undef": "off",
+    "linebreak-style": "off",
+    "no-console": "off",
+    "react/prop-types": "off"
+  },
+  "plugins": [
+    "react"
+  ]
+}

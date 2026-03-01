@@ -1,0 +1,42 @@
+[
+    {
+      "name": "onDynaLoader",
+      "subject": "Data Loader Completed",
+      "body": "<p><strong>Dynaloader Job Run Details</strong></p><p><br></p><p><strong>Project</strong>: {{projectLabel}}</p><p><br></p><p><strong>Job Id</strong> : {{id}}</p><p><br></p><p>Total Source: {{lengthOfSource}}</p><p>Total Inserts: {{lengthOfData}}</p><p>Total Duplicates: {{duplicates}}</p><p>Total Success : {{lengthOfSuccess}}</p><p>Results : {{results}}</p>"
+    },
+    {
+      "name": "onCodeVerify",
+      "subject": "Email Verification Code",
+      "body": "<p>Hi {{name}},</p><p><br></p><p><br></p><p>Your email verification is required.</p><p><br></p><p><br></p><p><strong>The Verification Code : {{code}}</strong></p><p><br></p><p><strong><span class=\"ql-cursor\">﻿</span></strong></p><p><br></p><p>This is an automated email.</p>"
+    },
+    {
+      "name": "onUserConfirmation",
+      "subject": "On User Confirmation",
+      "body": "<p>Hi {{name}},</p><p><br></p><p><br></p> <p>Welcome to {{projectLabel}} </p>"
+    },
+    {
+      "name": "onWelcomeEmail",
+      "subject": "Welcome Email",
+      "body": "<p>Hi {{name}},</p><p><br></p><p><br></p> <p>Welcome to {{projectLabel}} </p>"
+    },
+    {
+      "name": "onChangeForgotPassword",
+      "subject": "Reset Password Link",
+      "body": "<p>Hi {{name}},</p><p><br></p><p><br></p><p>Password Reset for : {{email}}</p><p><br></p><p><br></p><p>&lt;p&gt;&lt;a href=\"{{clientUrl}}\" target=\"_blank\" rel=\"noopener noreferrer\"&gt; Reset Link &lt;/a&gt;&lt;/p&gt;</p><p><br></p><p><br></p><p><br></p><p>Please follow the link to change your password.</p><p><br></p><p><br></p><p>This is an automated email.</p><p><br></p>"
+    },
+    {
+      "name": "onChangeForgotPasswordFailed",
+      "subject": "Failed to send failed password reset link",
+      "body": "<p>Hi {{name}},</p><p><br></p><p><br></p> <p>Welcome to {{projectLabel}} </p>"
+    },
+    {
+      "name": "onError",
+      "subject": "Error Captured",
+      "body": "The Job Id : {{id}}"
+    },
+    {
+      "name": "onFailedRecordNotification",
+      "subject": "Failed Records Notification",
+      "body": "<p>Hi {{recipientName}},</p><p><br></p><p>Your file upload contained some failed records.</p><p><br></p><p>Here are the details of the failed records:</p><p><br></p><p><strong style=\"color: rgb(230, 0, 0);\">{{failedRecordDetails}}</strong></p><p><br></p><p><br></p><p>The detailed list of failed records is attached as an Excel file.</p><p><br></p><p>This is an automated email.</p>"
+    }
+  ]  
